@@ -1,0 +1,135 @@
+{
+    "inicio": [
+        {
+            "es": "Descripción de la encuesta sobre destinos turísticos",
+            "en": "Description of the survey on tourist destinations",
+            "link": "inicio.html#descripcion"
+          },
+          {
+            "es": "Importancia de compartir opiniones",
+            "en": "Importance of sharing opinions",
+            "link": "inicio.html#importancia"
+          },
+          {
+            "es": "Propósito de la encuesta",
+            "en": "Purpose of the survey",
+            "link": "inicio.html#proposito"
+          },
+          {
+            "es": "Preguntas frecuentes",
+            "en": "Frequently Asked Questions",
+            "link": "inicio.html#faq"
+          } 
+    ],
+
+         
+   
+    "resultados": [
+        {
+            "es": "Opiniones sobre los destinos más populares",
+            "en": "Opinions on the most popular destinations",
+            "link": "resultados.html#opiniones"
+          },
+          {
+            "es": "Comparativa entre destinos turísticos",
+            "en": "Comparison between tourist destinations",
+            "link": "resultados.html#comparativa"
+          },
+          {
+            "es": "Sugerencias de mejoras basadas en los resultados",
+            "en": "Suggestions for improvements based on the results",
+            "link": "resultados.html#sugerencias"
+          },
+          {
+            "es": "Estadísticas sobre preferencias turísticas",
+            "en": "Statistics on tourist preferences",
+            "link": "resultados.html#estadisticas"
+          }      
+    ],
+    "recomendaciones": [
+        {
+            "es": "Consejos sobre destinos populares",
+            "en": "Tips on popular destinations",
+            "link": "recomendaciones.html#sugerencias"
+          },
+          {
+            "es": "Artículos sobre cómo elegir destinos turísticos",
+            "en": "Articles on how to choose tourist destinations",
+            "link": "rrarticulos.html"
+          },
+          {
+            "es": "Videos sobre guías de viajes",
+            "en": "Travel Guide Videos",
+            "link": "rrvideos.html"
+          },
+          {
+            "es": "Recomendaciones de tours y actividades",
+            "en": "Recommendations for tours and activities",
+            "link": "rrtours.html"
+          }
+    ],
+    "comunidad": [
+        {
+            "es": "Foros de viajeros",
+            "en": "Traveler's Forums",
+            "link": "cforos.html"
+          },
+          {
+            "es": "Encuentros y eventos de turismo",
+            "en": "Tourism meetings and events",
+            "link": "cencuentros.html"
+          },
+          {
+            "es": "Consejos de viajeros frecuentes",
+            "en": "Tips from frequent travelers",
+            "link": "cconsejos.html"
+          },
+          {
+            "es": "Opiniones sobre agencias de viajes",
+            "en": "Opinions on travel agencies",
+            "link": "copiniones.html"
+          }
+    ],
+    "extras": [
+        {
+            "es": "Videos sobre destinos turísticos",
+            "en": "Videos about tourist destinations",
+            "link": "extras.html#destinos"
+          },
+          {
+            "es": "Consejos sobre cómo ahorrar en viajes",
+            "en": "Tips on how to save on travel",
+            "link": "extras.html#videos"
+          },
+          {
+            "es": "Recomendaciones sobre hospedaje",
+            "en": "Recommendations on accommodation",
+            "link": "extras.html#recomendacion"
+          },
+          {
+            "es": "Artículos sobre tendencias turísticas",
+            "en": "Articles on tourism trends",
+            "link":"extras.html#articulo"
+          }
+    ],
+    "faq": [
+        { "es": "Preguntas frecuentes", "en": "Frequently Asked Questions", "link": "preguntas.html#sugerencias" }
+    ],
+    "contacto": [
+        {
+            "es": "Formulario de contacto",
+            "en": "Contact form",
+            "link": "ccformulario.html"
+          },
+          {
+            "es": "Redes sociales",
+            "en": "Social networks",
+            "link": "ccresdes.html"
+          },
+          {
+            "es": "Feedback y sugerencias",
+            "en": "Feedback and suggestions",
+            "link": "ccfeedback.html"
+          }
+    ]
+}

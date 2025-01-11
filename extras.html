@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery para simplificar -->
+    <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script> <!-- i18next -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-center">
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div id="logo">
+                <a href="index.html"> <img src="image/logo5.jpg" class="bg-none" alt="" width="100" height="80"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto" id="menu">
+                    <!-- El menú y submenús se cargarán  -->
+                </ul>
+                <select id="idioma" class="form-select w-auto bg-success text-white">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <a href="index.html" class="btn btn-primary mt-3 ">Volver al Inicio</a>
+
+<section id="destinos" class="container mx-auto mt-10 p-6">
+    <h1 class=" text-3xl text-center text-3xl text-danger font-bold mb-6">Destinos Recomendados  </h1>
+    <p class=" text-center text-white text-lg mb-8">
+        Explora nuestras listas cuidadosamente seleccionadas para descubrir tus próximos destinos favoritos. Desde escapadas relajantes hasta aventuras emocionantes, ¡tenemos algo para todos!    </p>
+
+    <div class="row  justify-center">
+        
+        <div class="col-md-4 mb-4">
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="image/extras1.jpg" class="card-img-top object-cover h-56 w-full" >
+                <div class="card-body p-5 flex flex-col">
+                    <h5 class="card-title text-center text-xl font-semibold mb-3"> Mejores Destinos para Relajarse</h5>
+                    <p class="card-text text-gray-600 text-justify mb-5">
+                        Descubre los lugares ideales para desconectarte y disfrutar de momentos llenos de tranquilidad y diversión.                    </p>
+                    <button class="btn bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-yellow-600 mt-auto" onclick="viewList('comedia')">Ver Lista</button>
+                </div>
+            </div>
+        </div>
+     
+        <div class="col-md-4 mb-4">
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="image/estras2.jpg" class="card-img-top object-cover h-56 w-full" >
+                <div class="card-body p-5 flex flex-col">
+                    <h5 class="card-title text-center text-xl font-semibold mb-3">Destinos Inolvidables</h5>
+                    <p class="card-text text-gray-600 text-justify mb-5">
+                        Explora lugares llenos de historia, cultura y experiencias únicas que te dejarán sin aliento.</p>
+                    <button class="btn bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 mt-auto" onclick="viewList('drama')">Ver Lista</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="image/extras3.jpg" class="card-img-top object-cover h-56 w-full" >
+                <div class="card-body p-5 flex flex-col">
+                    <h5 class="card-title text-center text-xl font-semibold mb-3">Los Mejores Destinos Futuristas</h5>
+                    <p class="card-text text-gray-600 text-justify mb-5">
+                        Descubre lugares innovadores y llenos de tecnología que parecen sacados de otro mundo. ¡Déjate sorprender por el futuro en el presente!                    </p>
+                    <button class="btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 mt-auto" onclick="viewList('cienciaFiccion')">Ver Lista</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="videos" class="container mt-4">
+    <h1 class=" text-danger text-center text-3xl"">Videos sobre Análisis de Destinos</h1>
+    <p class=" text-white text-center mb-4">Explora nuestros videos donde analizamos y discutimos las mejores experiencias y consejos para tus destinos favoritos.</p>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/XsdDyJJPDeA" title="Video Análisis 1" frameborder="0" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">Un homenaje visual a la rica cultura, historia y diversidad de los paisajes mexicanos, celebrando 200 años de independencia. SINALOA es el TERCER Estado en México de esta campaña de Televisa, producida por Filmmates. Este promo de 3 minutos fué presentado el Martes 23 de Febrero del 2010  en el Noticiero de Joaquín López Doriga.                           </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/ThFCg0tBDck" title="Video Análisis 2" frameborder="0" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                        Un recorrido visual por las maravillas naturales de Alberta, destacando montañas majestuosas, lagos cristalinos y vastos bosques que invitan a la contemplación. Embárcate en un viaje conmovedor en Alberta, donde cada momento se convierte en un lienzo pintado con paisajes impresionantes y aventuras ilimitadas.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/q8yWs3IJKRY" title="Video Análisis 3" frameborder="0" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">Noruega es un país moderno con excelentes carreteras e infraestructura. Pero hay algunos matices que son útiles de entender antes de aventurarse en un viaje por carretera para que esté completamente preparado. En este video cubrimos 11 consejos que le ayudarán a navegar por las carreteras de Noruega como turista.  
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="recomendacion" class="container mt-4">
+    <h1 class="text-center text-danger text-3xl"">Encuentra el hospedaje perfecto para tu aventura</h1>
+    <p class="text-center text-white mb-4">Cuando planeas un viaje, el hospedaje es uno de los aspectos más importantes para garantizar una experiencia inolvidable. Desde hoteles de lujo hasta acogedoras casas rurales, elegir el lugar adecuado puede marcar la diferencia. En esta página, te ofrecemos recomendaciones cuidadosamente seleccionadas para que encuentres el alojamiento ideal según tus necesidades y presupuesto.</p>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="image/recomendaciones1.jpg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" alt="Reseña 1">
+                <div class="card-body">
+                    <h5 class="card-title">Hoteles de lujo</h5>
+                    <p class="card-text">Perfectos para quienes buscan confort y servicios de alta gama. Con instalaciones modernas, restaurantes exclusivos y atención personalizada, estos hoteles garantizan una experiencia premium.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="image/recomendaciones2.jpg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" alt="Reseña 2">
+                <div class="card-body">
+                    <h5 class="card-title">Hostales y alojamientos económicos</h5>
+                    <p class="card-text">Ideales para viajeros que desean ahorrar sin sacrificar comodidad. Estos lugares suelen ser céntricos, funcionales y perfectos para quienes pasan la mayor parte del tiempo explorando el destino.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="image/recomendaciones3.jpg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" alt="Reseña 3">
+                <div class="card-body">
+                    <h5 class="card-title">Cabañas y casas rurales</h5>
+                    <p class="card-text">Una opción para los amantes de la naturaleza y la tranquilidad. Este tipo de hospedaje ofrece una conexión especial con el entorno, ideal para viajes en pareja o en familia.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="articulo" class="container mt-4">
+    <h1 class="fw-bold mb-4 text-danger text-3xl">Tendencias Turísticas</h1>
+    <div class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+        <div class="row align-items-center">
+          <!-- Columna de Texto -->
+          <div class="col-md-6">
+              <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="Ititulo1">Turismo sostenible: Viajar con propósito</h2>
+              <p class="mt-3 text-lg text-gray-700 text-left" data-i18n="Iparrafo1">
+                En un mundo cada vez más consciente del impacto ambiental, el turismo sostenible se ha convertido en una prioridad. Este tipo de turismo promueve el respeto por las comunidades locales, la preservación del medio ambiente y la reducción de la huella ecológica. Desde alojamientos eco-friendly hasta actividades responsables, esta tendencia redefine la manera de explorar el mundo.
+            </div>
+          <!-- Columna de Imagen -->
+          <div class="col-md-6">
+                <img src="image/articulo1.jpg" alt="Descripción del proyecto" class="img-fluid rounded shadow">
+          </div>
+      </div>
+  </div>
+  <div  class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+    <div class="row align-items-center">
+      <!-- Columna de Texto -->
+      <div class="col-md-6">
+          <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="Ititulo1">Workation: Combinar trabajo y vacaciones</h2>
+          <p class="mt-3 text-lg text-gray-700 text-left" data-i18n="Iparrafo1">
+            <p class="lead">La pandemia trajo consigo nuevas formas de trabajar, y el "workation" (trabajo más vacaciones) es una de las más populares. Imagina trabajar desde una cabaña en la montaña o desde una playa tropical. Este estilo de vida mezcla productividad con ocio, permitiéndote disfrutar de nuevos destinos sin descuidar tus responsabilidades laborales.</p>
+      </div>
+      <!-- Columna de Imagen -->
+      <div class="col-md-6">
+            <img src="image/articulo3.jpg" alt="Descripción del proyecto" class="img-fluid rounded shadow">
+      </div>
+  </div>
+</div>
+  
+</section>
+
+
+
+   
+    
+   
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" class="text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

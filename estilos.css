@@ -1,0 +1,141 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #462a2a;
+}
+
+#menu-container {
+    background-color: #bb1414;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 10px;
+}
+
+.nav-link {
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.dropdown-item {
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilos del selector de idioma */
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Carrusel */
+.carousel-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+    
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-selector {
+        top: 50px;
+        right: 10px;
+    }
+
+    .nav-link, .dropdown-item {
+        padding: 10px;
+    }
+}
+
+/* Personalizaciones adicionales */
+#menu .nav-link {
+    color: white !important; /* Color del texto del menú principal */
+}
+
+#menu .dropdown-item {
+    color: white !important; /* Color del texto de los submenús */
+}
+
+#titulo-pagina {
+    text-shadow: 2px 10px 5px #F42828; /* Sombra personalizada para el título */
+}
+
+.navbar-toggler {
+    border-color: white; /* Cambia el color del borde del botón del menú móvil */
+}
+#Tcontenido{
+    text-shadow: 2px 10px 5px #F42828;
+}

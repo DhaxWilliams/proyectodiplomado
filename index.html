@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery para simplificar -->
+    <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script> <!-- i18next -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+</head>
+<body class="bg-black text-center">
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div id="logo">
+                <img src="image/logo5.jpg" class="bg-none" alt="" width="100" height="80" >
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto" id="menu">
+                    <!-- El menú y submenús se cargarán dinámicamente -->
+                </ul>
+                <select id="idioma" class="form-select w-auto bg-success text-white">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="main-content">
+        <div class="container mt-4">
+            <div>
+                <p id="Tcontenido" class="lead text-white font-monospace fw-bold fs-3">
+                    <!-- Contenido dinámico aquí -->
+                </p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Carrusel -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/imagen2.jpg" class="d-block w-100" alt="Imagen 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 id="titulo1">Primera imagen</h5>
+                            <p id="descripcion1">Descripción de la primera imagen.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/imagen4.png" class="d-block w-100" alt="Imagen 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 id="titulo2">Segunda imagen</h5>
+                            <p id="descripcion2">Descripción de la segunda imagen.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/imagen5.jpg" class="d-block w-100" alt="Imagen 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 id="titulo3">Tercera imagen</h5>
+                            <p id="descripcion3">Descripción de la tercera imagen.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-id="video1">
+                        <video class="d-block w-100" autoplay controls loop>
+                            <source src="videos/video1.mp4" type="video/mp4">
+                        </video>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 id="tvideo1" class="textocarrusel">¡Reproducir!</h5>
+                            <p id="dvideo1">Descripción del video.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+            
+    
+        </div>
+    </div>
+    <!-- Beneficios -->
+    <section class="py-5 bg-light bg-black" id="beneficios">
+        <div class="container text-center text-success">
+            <h2 class="display-4" id="beneficios-titulo">¿Por qué usar nuestra plataforma?</h2>
+            <p class="mt-4 lead" id="beneficios-descripcion">La mejor herramienta para compartir y conocer las experiencias de otros viajeros.</p>
+            <div class="row mt-5">
+                <div class="col-md-3 mb-4">
+                    <div class="card p-4 shadow-sm text-white" style="background-color: rebeccapurple; background-size: cover; background-position: center;">
+                        <h3 class="card-title position-relative" id="beneficios-card1-titulo">Ranking de Destinos Turísticos</h3>
+                        <p class="card-text position-relative" id="beneficios-card1-descripcion">Aquí encontrarás los destinos turísticos más recomendados, con opiniones actualizadas y valoraciones de viajeros.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="card p-4 shadow-sm text-white"style="background-color: rebeccapurple; background-size: cover; background-position: center;">
+                        <h3 class="card-title position-relative" id="beneficios-card2-titulo">Plataformas de Viajes</h3>
+                        <p class="card-text position-relative" id="beneficios-card2-descripcion">Te recomendamos las mejores plataformas para descubrir y planificar tus aventuras turísticas.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-4 shadow-sm text-white"style="background-color: rebeccapurple; background-size: cover; background-position: center;">
+                        <h3 class="card-title position-relative" id="beneficios-card3-titulo">Variedad de Destinos</h3>
+                        <p class="card-text position-relative" id="beneficios-card3-descripcion">Destinos turísticos que van desde los más clásicos hasta los más novedosos, para todos los gustos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Llamada a la acción -->
+    <section class="bg-success py-2 text-center text-white">
+        <h2 id="listo-titulo" class="display-7">¿Listo para empezar?</h2>
+        <p id="listo-descripcion" class="mt-2 lead">Comienza a compartir tus opiniones sobre los destinos que has visitado.</p>
+        <a id="listo-boton" href="#generador" class="btn btn-dark mt-4">Empezar</a>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3"> 
+        <div class="container text-center">
+            <p id="footer-texto">&copy; 2025 Derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" class="text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
+

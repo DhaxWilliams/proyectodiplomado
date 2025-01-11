@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery para simplificar -->
+    <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script> <!-- i18next -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-center">
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div id="logo">
+                <img src="image/logo5.jpg" class="bg-none" alt="" width="100" height="80">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto" id="menu">
+                    <!-- El menú y submenús se cargarán dinámicamente -->
+                </ul>
+                <select id="idioma" class="form-select w-auto bg-success text-white">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <a href="index.html" class="btn btn-primary mt-3 ">Volver al Inicio</a>
+    <!-- Contenido Principal -->
+    <div class="main-content">
+        <div class="container mt-4">
+            <div>
+                <p id="Tcontenido" class="lead text-white font-monospace fw-bold fs-3">
+                    <!-- Contenido dinámico aquí -->
+                </p>
+            </div>    
+        </div>
+    </div>
+
+  <!-- Contenido -->
+    <div id="descripcion" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+          <div class="row align-items-center">
+            <!-- Columna de Texto -->
+            <div class="col-md-6">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="Ititulo1">Descripción de la encuesta sobre destinos turísticos</h2>
+                <p class="mt-3 text-lg text-gray-700 text-left" data-i18n="Iparrafo1">
+                La Encuesta sobre Destinos Turísticos tiene como objetivo principal conocer las preferencias y experiencias de los viajeros en relación con diferentes destinos turísticos. A través de preguntas detalladas, buscamos recopilar información valiosa sobre los lugares más visitados, las actividades favoritas, la calidad del servicio y otros aspectos importantes que influyen en la elección de un destino. Este cuestionario es sencillo y rápido de completar, pero proporciona información crucial para ayudar a futuros turistas a tomar decisiones informadas                </p>
+            </div>
+            <!-- Columna de Imagen -->
+            <div class="col-md-6">
+                  <img src="image/inicio1.jpg" alt="Descripción del proyecto" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 2: Importancia -->
+    <div id="importancia" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+      <div class="row align-items-center">
+          <!-- Columna de Imagen -->
+          <div class="col-md-6">
+              <img src="image/inicio2.jpg" alt="Importancia" class="img-fluid rounded shadow">
+          </div>
+          <!-- Columna de Texto -->
+          <div class="col-md-6">
+              <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="Ititulo2">Importancia de compartir opiniones</h2>
+              <p class="mt-3 text-lg text-gray-700 text-left" data-i18n="Iparrafo2">
+                Compartir opiniones sobre los destinos turísticos es una práctica fundamental tanto para quienes desean descubrir nuevos lugares como para quienes buscan mejorar sus experiencias de viaje. Las opiniones de otros viajeros pueden ofrecer una perspectiva más completa, ayudando a otros a evitar errores o aprovechar al máximo su visita. Además, al compartir tus experiencias, contribuyes a una comunidad más conectada, donde todos pueden aprender de las vivencias de los demás, desde recomendaciones sobre alojamiento hasta consejos sobre actividades locales.              </p>
+          </div>
+      </div>
+    </div>
+  
+  
+    <!-- Sección 3: Beneficios de Participar -->
+      <div id="proposito" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+        <div class="row align-items-center">
+            <!-- Columna de Texto -->
+            <div class="col-md-6">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="Ititulo3">Propósito de la encuesta</h2>
+                <p class="mt-3 text-lg text-gray-700 text-left" data-i18n="Iparrafo3">El propósito principal de la encuesta es recoger información genuina y relevante para mejorar los servicios turísticos y la planificación de viajes. Gracias a las respuestas obtenidas, podemos identificar los destinos más valorados, los servicios que requieren atención y qué aspectos de cada lugar pueden ser optimizados para futuros visitantes. Además, nos permite fomentar un turismo más responsable y sostenible, al resaltar los lugares que promueven prácticas ecológicas y culturales positivas. </p>
+            </div>
+            <!-- Columna de Imagen -->
+            <div class="col-md-6">
+                <img src="image/inicio3.jpg" alt="Beneficios" class="img-fluid rounded shadow">
+            </div>
+        </div>
+      </div>
+  
+  
+    <!-- Sección 4: Preguntas Frecuentes -->
+    <div id="faq" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+      <div class="row align-items-center">
+          <!-- Columna de Imagen -->
+          <div class="col-md-4">
+              <img src="image/inicio4.jpg" alt="Beneficios" class="img-fluid rounded shadow">
+          </div>
+          <!-- Columna de Texto -->
+          <div class="col-md-6">
+              <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="ipregunta">Preguntas frecuentes</h2>
+              <div class="text-lg text-gray-700 space-y-4 text-left">
+                  <p>
+                      <strong data-i18n="ipregunta1">¿Quién puede participar en la encuesta?</strong><br> 
+                      <p data-i18n="inipregunta3">La encuesta es breve y se puede completar en aproximadamente 5-10 minutos. </p>
+                  </p>
+                  <p>
+                      <strong data-i18n="inipregunta4">¿Mis respuestas son confidenciales?</strong><br> 
+                      <p data-i18n="inipregunta5">Sí, todas las respuestas se mantienen confidenciales. Usamos la información únicamente con fines estadísticos y para mejorar los destinos turísticos.<p>
+                  </p>
+                  <p>
+                      <strong data-i18n="inipregunta6">¿Cómo se utilizarán los resultados de la encuesta?</strong><br> 
+                      <p data-i18n="inipregunta7">Los resultados ayudarán a mejorar la calidad del turismo, promover destinos más sostenibles y ofrecer a los turistas recomendaciones más precisas.</p>
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <a href="index.html" class="btn btn-primary mt-3 ">Volver al Inicio</a>
+
+   
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" class="text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
+

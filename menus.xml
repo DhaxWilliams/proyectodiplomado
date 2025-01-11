@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <menu>
+        <item id="inicio">
+            <es>Inicio</es>
+            <en>Home</en>
+            <link>inicio.html</link>
+        </item>
+        <item id="formulario">
+            <es>Formulario de Opinión</es>
+            <en>Opinion Form</en>
+            <link>formulario.html</link>
+        </item>
+        <item id="resultados">
+            <es>Análisis de Resultados</es>
+            <en>Results Analysis</en>
+            <link>resultados.html</link>
+        </item>
+        <item id="recomendaciones">
+            <es>Recomendaciones</es>
+            <en>Recommendations</en>
+            <link>recomendaciones.html</link>
+        </item>
+        <item id="comunidad">
+            <es>Comunidad</es>
+            <en>Community</en>
+            <link>comunidad.html</link>
+        </item>
+        <item id="extras">
+            <es>Extras</es>
+            <en>Extras</en>
+            <link>extras.html</link>
+        </item>
+        <item id="faq">
+            <es>FAQ</es>
+            <en>FAQ</en>
+            <link>faq.html</link>
+        </item>
+        <item id="contacto">
+            <es>Contacto</es>
+            <en>Contact</en>
+            <link>contacto.html</link>
+        </item>
+    </menu>
+
+    <text id="Tcontenido">
+        <es>Bienvenidos a Opinión sobre destinos turísticos</es>
+        <en>Welcome to Opinion on tourist destinations</en>
+    </text>
+
+    <carrusel>
+        <item id="imagen1">
+            <es>
+                <titulo>Primera Imagen</titulo>
+                <descripcion>Esta es la descripción de la primera imagen en español.</descripcion>
+            </es>
+            <en>
+                <titulo>First Image</titulo>
+                <descripcion>This is the description of the first image in English.</descripcion>
+            </en>
+        </item>
+        <item id="imagen2">
+            <es>
+                <titulo>Segunda Imagen</titulo>
+                <descripcion>Esta es la descripción de la segunda imagen en español.</descripcion>
+            </es>
+            <en>
+                <titulo>Second Image</titulo>
+                <descripcion>This is the description of the second image in English.</descripcion>
+            </en>
+        </item>
+        <item id="imagen3">
+            <es>
+                <titulo>tercera Imagen</titulo>
+                <descripcion>Esta es la descripción de la tercera imagen en español.</descripcion>
+            </es>
+            <en>
+                <titulo>Third Image</titulo>
+                <descripcion>This is the description of the third image in English.</descripcion>
+            </en>
+        </item>
+        <item id="video1">
+            <es>
+                <titulo>Video de Muestra</titulo>
+                <descripcion>Descripción del video</descripcion>
+            </es>
+            <en>
+                <titulo>Sample Video</titulo>
+                <descripcion>Video description</descripcion>
+            </en>
+        </item>
+    </carrusel>
+    <beneficios>
+        <es>
+            <titulo>¿Por qué usar nuestra plataforma?</titulo>
+            <descripcion>La mejor herramienta para compartir y conocer las experiencias de otros viajeros.</descripcion>
+            <card1>
+                <titulo>Ranking de Destinos Turísticos</titulo>
+                <descripcion>Aquí encontrarás los destinos turísticos más recomendados, con opiniones actualizadas y valoraciones de viajeros.</descripcion>
+            </card1>
+            <card2>
+                <titulo>Plataformas de Viajes</titulo>
+                <descripcion>Te recomendamos las mejores plataformas para descubrir y planificar tus aventuras turísticas.</descripcion>
+            </card2>
+            <card3>
+                <titulo>Variedad de Destinos</titulo>
+                <descripcion>Destinos turísticos que van desde los más clásicos hasta los más novedosos, para todos los gustos.</descripcion>
+            </card3>
+        </es>
+        <en>
+            <titulo>Why use our platform?</titulo>
+            <descripcion>The best tool to share and learn from other travelers' experiences.</descripcion>
+            <card1>
+                <titulo>Ranking of Tourist Destinations</titulo>
+                <descripcion>Here you'll find the most recommended tourist destinations, with up-to-date reviews and ratings from travelers.</descripcion>
+            </card1>
+            <card2>
+                <titulo>Travel Platforms</titulo>
+                <descripcion>We recommend the best platforms to discover and plan your tourist adventures.</descripcion>
+            </card2>
+            <card3>
+                <titulo>Variety of Destinations</titulo>
+                <descripcion>Tourist destinations ranging from the most classic to the most innovative, catering to all tastes.</descripcion>
+            </card3>
+        </en>
+    </beneficios>
+    <listo>
+        <es>
+            <titulo>¿Listo para empezar?</titulo>
+            <descripcion>Comienza a compartir tus opiniones sobre los destinos que has visitado.</descripcion>
+            <boton>Empezar</boton>
+        </es>
+        <en>
+            <titulo>Ready to start?</titulo>
+            <descripcion>Start sharing your opinions about the destinations you've visited.</descripcion>
+            <boton>Start</boton>
+        </en>
+    </listo>
+    <footer>
+        <es>
+            <texto> 2025 Derechos reservados.</texto>
+        </es>
+        <en>
+            <texto> 2025 All rights reserved.</texto>
+        </en>
+    </footer>
+
+</translations>
