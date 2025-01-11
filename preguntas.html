@@ -9,8 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery para simplificar -->
-    <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script> <!-- i18next -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -21,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <div id="logo">
-                <img src="image/logo5.jpg" class="bg-none" alt="" width="100" height="80">
+              <a href="index.html"> <img src="image/logo5.jpg" class="bg-none" alt="" width="100" height="80"></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,61 +35,99 @@
             </div>
         </div>
     </nav>
-
-    
     <div class="container mt-4">
-        <div id="descripcion" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
-            <div class="row align-items-center">
-            <div class="col-md-6">
-                <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="inidescripcion1">¿Puedo modificar mi opinión sobre un destino?</h2>
-                <p class="mt-3 text-lg text-gray-700 text-left" data-i18n="inidescripcion2">
-                    Sí, puedes modificar tu opinión sobre un destino siempre que la plataforma lo permita. Generalmente, en la sección de tu perfil o en el área de opiniones, encontrarás una opción para editar o actualizar tus comentarios y valoraciones. Esto es útil si has cambiado de parecer tras una nueva experiencia o si deseas aportar más detalles. Revisa las políticas de la plataforma para asegurarte de que tu modificación cumpla con las normas establecidas.                </p>
-            </div>
-            <div class="col-md-6">
-                <img src="image/preguntas1.jpg" alt="Descripción del proyecto" class="img-fluid rounded shadow">
-            </div>
-        </div>
-    </div>
-
-    <div id="importancia" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+      <div id="formulario" class="container mb-5 bg-success-subtle rounded shadow-lg transition-transform transform hover:scale-105">
         <div class="row align-items-center">
+          <div class="row align-items-center">    
+            <div class="col-md-6 text-center">
+              <img src="image/preguntas1.jpg" alt="Contacto" class="img-fluid rounded-circle">
+            </div>  
             <div class="col-md-6">
-                <img src="image/preguntas2.jpg" alt="Importancia" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6">
-                <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="iniimportancia1">¿Puedo ver las opiniones de otros usuarios?</h2>
-                <p class="mt-3 text-lg text-gray-700 text-left" data-i18n="iniimportancia2">
-                    Por lo general, las plataformas de reseñas permiten ver las opiniones de otros usuarios para ayudarte a tomar decisiones informadas. Puedes acceder a estas opiniones navegando en la página del destino, producto o servicio que te interesa. Allí encontrarás valoraciones, comentarios y experiencias compartidas por otros usuarios, que te ofrecerán diferentes perspectivas y te ayudarán a evaluar mejor tu elección.            </div>
+              <h2 class=" font-bold text-blue-600 mb-4">Formulario</h2>
+              <p class=" text-blue-600">Preguntas mas Frecuentes</p>
+           <form id="contact-form ">
+              <div class="mb-3">
+                <label for="name" class="form-label text-danger text-start">¿Puedo modificar mi opinión sobre un destino?</label>
+                <p>
+                  Sí, puedes modificar tu opinión sobre un destino siempre que la plataforma lo permita.
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label text-danger text-start">¿Puedo ver las opiniones de otros usuarios?</label>
+                <p>Por lo general, las plataformas de reseñas permiten ver las opiniones de otros usuarios para ayudarte a tomar decisiones informadas.</p>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-danger">¿Puedo participar en más encuestas?</label>
+                <p>Sí, puedes participar en más encuestas si la plataforma las tiene disponibles.</p>
+              </div>
+               <div class="mb-3">
+                  <label for="message" class="form-label text-danger">Mensaje o Consulta</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+              </div>
+                  <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+              <div id="confirmation-message" class="alert alert-success mt-3 text-center" style="display: none;">
+                Tu mensaje ha sido enviado. Nos comunicaremos contigo lo antes posible.
+              </div>
+              
+            </div>       
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="container mt-4">
-        <div id="descripcion" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
-            <div class="row align-items-center">
-            <div class="col-md-6">
-                <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="inidescripcion1">¿Puedo participar en más encuestas?</h2>
-                <p class="mt-3 text-lg text-gray-700 text-left" data-i18n="inidescripcion2">
-                    Sí, puedes participar en más encuestas si la plataforma las tiene disponibles. Muchas veces, estas encuestas están diseñadas para obtener tu retroalimentación sobre distintos temas y mejorar los servicios ofrecidos. Revisa tu perfil o las notificaciones para ver si hay encuestas activas. Participar en ellas no solo contribuye a la mejora de la plataforma, sino que también puede ofrecerte recompensas o beneficios.            </div>
-            <div class="col-md-6">
-                <img src="image/preguntas3.jpg" alt="Descripción del proyecto" class="img-fluid rounded shadow">
-            </div>
-        </div>
-    </div>
-
-    <div id="importancia" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+    <div id="importancia" class="container mb-5 p-5 bg-success-subtle rounded shadow-lg transition-transform transform hover:scale-105">
         <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="image/pregunta3.jpg" alt="Importancia" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6">
-                <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="iniimportancia1">Contactar soporte</h2>
-                <p class="mt-3 text-lg text-gray-700 text-left" data-i18n="iniimportancia2">
-                    Si necesitas contactar soporte, puedes hacerlo a través de las opciones que ofrece la plataforma. Esto incluye chat en vivo, correos electrónicos o formularios de contacto. Detalla tu consulta o problema para recibir una respuesta más precisa y rápida. Asegúrate de incluir cualquier información relevante, como tu nombre de usuario o capturas de pantalla, si es necesario. Los tiempos de respuesta pueden variar, pero la mayoría de los equipos de soporte intentan resolver las inquietudes lo más rápido posible.        
-            </div>
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8">
+                  <h1 class="text-3xl font-bold text-blue-600 mb-4">Contactar soporte</h1>
+                  <p class="text-gray-600 text-lg">
+                      Si necesitas contactar soporte, puedes hacerlo a través de las opciones que ofrece la plataforma. Detalla tu consulta o problema para recibir una respuesta más precisa y rápida.</p>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center mb-4 md:mb-0">
+                    <img src="image/pregunta4.png" alt="Soporte técnico" class="rounded shadow-lg w-3/4 mx-auto">
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="list-group mb-4">
+                      <li class="list-group-item d-flex align-items-center">
+                        <i class="fas fa-phone-alt text-primary me-3"></i>
+                        <span class="text-gray-700">Llama al soporte: <strong>+591 77777444</strong></span>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center">
+                        <i class="fas fa-envelope text-primary me-3"></i>
+                        <span class="text-gray-700">Correo: <strong>Williamssanchez755@gmail.com</strong></span>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center">
+                        <i class="fas fa-comments text-primary me-3"></i>
+                        <span class="text-gray-700">Chat en vivo: <strong>disponible 24/7</strong></span>
+                      </li>
+                    </ul>
+                    <div class="flex space-x-4">
+                      <a href="#" class="text-blue-600 hover:text-blue-800">
+                        <i class="fab fa-facebook-f text-2xl"></i>
+                      </a>
+                      <a href="#" class="text-blue-400 hover:text-blue-600">
+                        <i class="fab fa-twitter text-2xl"></i>
+                      </a>
+                      <a href="#" class="text-pink-600 hover:text-pink-800">
+                        <i class="fab fa-instagram text-2xl"></i>
+                      </a>
+                      <a href="#" class="text-pink-600 hover:text-pink-800">
+                          <i class="fab fa-whatsapp text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-pink-600 hover:text-pink-800">
+                            <i class="fab fa-tiktok text-2xl"></i>
+                          </a>
+                          <a href="#" class="text-pink-600 hover:text-pink-800">
+                            <i class="fab fa- text-2xl"></i>
+                          </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
-
-    <!-- Footer -->
     <footer class="bg-dark text-white py-3">
         <div class="container text-center">
             <p>&copy; 2025 Derechos reservados.</p>

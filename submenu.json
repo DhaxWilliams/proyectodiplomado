@@ -50,39 +50,39 @@
         {
             "es": "Consejos sobre destinos populares",
             "en": "Tips on popular destinations",
-            "link": "recomendaciones.html#sugerencias"
+            "link": "recomendacion.html#sugerencias"
           },
           {
             "es": "Artículos sobre cómo elegir destinos turísticos",
             "en": "Articles on how to choose tourist destinations",
-            "link": "rrarticulos.html"
+            "link": "recomendacion.html#sugerencias"
           },
           {
             "es": "Videos sobre guías de viajes",
             "en": "Travel Guide Videos",
-            "link": "rrvideos.html"
+            "link": "recomendacion.html#sugerencias"
           },
           {
             "es": "Recomendaciones de tours y actividades",
             "en": "Recommendations for tours and activities",
-            "link": "rrtours.html"
+            "link": "recomendacion.html#sugerencias"
           }
     ],
     "comunidad": [
         {
             "es": "Foros de viajeros",
             "en": "Traveler's Forums",
-            "link": "cforos.html"
+            "link": "comunidad.html#comunidad"
           },
           {
             "es": "Encuentros y eventos de turismo",
             "en": "Tourism meetings and events",
-            "link": "cencuentros.html"
+           "link": "comunidad.html#comunidad"
           },
           {
             "es": "Consejos de viajeros frecuentes",
             "en": "Tips from frequent travelers",
-            "link": "cconsejos.html"
+            "link": "comunidad.html#comunidad"
           },
           {
             "es": "Opiniones sobre agencias de viajes",
@@ -119,17 +119,17 @@
         {
             "es": "Formulario de contacto",
             "en": "Contact form",
-            "link": "ccformulario.html"
+            "link": "contactos.html#formulario"
           },
           {
             "es": "Redes sociales",
             "en": "Social networks",
-            "link": "ccresdes.html"
+            "link": "contactos.html#redessociales"
           },
           {
             "es": "Feedback y sugerencias",
             "en": "Feedback and suggestions",
-            "link": "ccfeedback.html"
+            "link": "contactos.html#formulario"
           }
     ]
 }
